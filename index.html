@@ -11,35 +11,60 @@
     </head>
 
     <body>
-        <!-- Form starts -->
+        <header>
+            <div>
+                <img src="assets/images/logo-mark.svg">
+                <h2>Coding Conf</h2>
+            </div>
+        </header>
 
-        Your Journey to Coding Conf 2025 Starts Here!
+        <main>
+            <h1>Your Journey to Coding Conf<br> 2025 Starts Here!</h1>
+            <h2>Secure your spot at next year's biggest coding conference.</h2>
 
-        Secure your spot at next year's biggest coding conference.
+            <form>
+                <div class="form-div-wrapper form-div-wrapper1">
+                    <label>Upload Avatar</label>
+                    <div class="upload-avatar-div">
+                        <div class="icon-upload-div"><img src="assets/images/icon-upload.svg"></div>
+                        <h3>Drag and drop or click to upload</h3>
+                    </div>
+                    <div class="info-div">
+                        <img src="assets/images/icon-info.svg">
+                        <p>Upload your photo (JPG or PNG, max size: 500KB).</p>
+                    </div>
+                </div>
 
-        Upload Avatar
-        Drag and drop or click to upload
-        Upload your photo (JPG or PNG, max size: 500KB).
+                <div class="form-div-wrapper form-div-wrapper2">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name">
+                </div>
 
-        Full Name
+                <div class="form-div-wrapper form-div-wrapper3">
+                    <label for="email-address">Email Address</label>
+                    <input type="text" placeholder="example@email.com" id="email-address">
+                </div>
 
-        Email Address
-        example@email.com
+                <div class="form-div-wrapper form-div-wrapper4">
+                    <label id="github-username">GitHub Username</label>
+                    <input type="text" placeholder="@yourusername" id="github-username">
+                </div>
 
-        GitHub Username
-        @yourusername
+                <button type="submit">Generate My Ticket</button>
+            </form>
 
-        Generate My Ticket
+            <div class="congratulations">
+                <h1>Congrats, <!-- Full Name -->! Your ticket is ready.</h1>
 
-        <!-- Form ends -->
+                <h2>We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.</h2>
 
-        <!-- Generated tickets starts -->
-
-        Congrats, <!-- Full Name -->! Your ticket is ready.
-
-        We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.
-
-        Coding Conf
-        Jan 31, 2025 / Austin, TX
+                <div>
+                    <h2>Coding Conf</h2>
+                    <p>Jan 31, 2025 / Austin, TX</p>
+                </div>
+            </div>
+        </main>
+        
+        <script src="script.js"></script>
     </body>
 </html>
