@@ -19,50 +19,91 @@
         </header>
 
         <main>
-            <h1>Your Journey to Coding Conf<br> 2025 Starts Here!</h1>
-            <h2>Secure your spot at next year's biggest coding conference.</h2>
+            <!-- Main Block -->
+            <div class="main-div" id="main-div">
+                <h1>Your Journey to Coding Conf<br>2025 Starts Here!</h1>
+                <h2>Secure your spot at next year's biggest coding conference.</h2>
 
-            <form>
-                <div class="form-div-wrapper form-div-wrapper1">
-                    <label>Upload Avatar</label>
-                    <div class="upload-avatar-div">
-                        <div class="icon-upload-div"><img src="assets/images/icon-upload.svg"></div>
-                        <h3>Drag and drop or click to upload</h3>
+                <!-- Form -->
+                <form>
+                    <div class="form-div-wrapper form-div-wrapper1">
+                        <label>Upload Avatar</label>
+                        <div class="upload-avatar-div">
+                            <div class="icon-upload-div"><img src="assets/images/icon-upload.svg"></div>
+                            <h3>Drag and drop or click to upload</h3>
+                        </div>
+                        <div class="info-div">
+                            <img src="assets/images/icon-info.svg">
+                            <p>Upload your photo (JPG or PNG, max size: 500KB).</p>
+                        </div>
                     </div>
-                    <div class="info-div">
-                        <img src="assets/images/icon-info.svg">
-                        <p>Upload your photo (JPG or PNG, max size: 500KB).</p>
+
+                    <div class="form-div-wrapper form-div-wrapper2">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name">
+                        <div id="warning1" class="warning">
+                            <img src="assets/images/icon-info.svg">
+                            <p>Please enter your full name</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-div-wrapper form-div-wrapper2">
-                    <label for="full-name">Full Name</label>
-                    <input type="text" id="full-name">
-                </div>
+                    <div class="form-div-wrapper form-div-wrapper3">
+                        <label for="email-address">Email Address</label>
+                        <input type="text" placeholder="example@email.com" id="email-address">
+                        <div id="warning2" class="warning">
+                            <img src="assets/images/icon-info.svg">
+                            <p>Please enter your email address</p>
+                        </div>
+                    </div>
 
-                <div class="form-div-wrapper form-div-wrapper3">
-                    <label for="email-address">Email Address</label>
-                    <input type="text" placeholder="example@email.com" id="email-address">
-                </div>
+                    <div class="form-div-wrapper form-div-wrapper4">
+                        <label id="github-username">GitHub Username</label>
+                        <input type="text" placeholder="@yourusername" id="github-username">
+                        <div id="warning3" class="warning">
+                            <img src="assets/images/icon-info.svg">
+                            <p>Please enter your GitHub Username</p>
+                        </div>
+                    </div>
 
-                <div class="form-div-wrapper form-div-wrapper4">
-                    <label id="github-username">GitHub Username</label>
-                    <input type="text" placeholder="@yourusername" id="github-username">
-                </div>
+                    <button type="submit" id="btn-submit">Generate My Ticket</button>
+                </form>
+            </div>
 
-                <button type="submit">Generate My Ticket</button>
-            </form>
+            <!-- Congratulation Block -->
+            <div class="congratulations" id="congratulations-div">
+                <h1 id="congrats-h1"></h1>
 
-            <div class="congratulations">
-                <h1>Congrats, <!-- Full Name -->! Your ticket is ready.</h1>
+                <h2 id="congrats-h2"></h2>
 
-                <h2>We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.</h2>
-
-                <div>
-                    <h2>Coding Conf</h2>
+                <div class="ticket-div">
+                    <div class="header-ticket-div">
+                        <img src="assets/images/logo-mark.svg" class="mark-logo">
+                        <h2>Coding Conf</h2>
+                    </div>
+            
                     <p>Jan 31, 2025 / Austin, TX</p>
+
+                    <div class="user-info-div">
+                        <img src="assets/images/image-avatar.jpg" class="avatar-img">
+                        <div class="congrats-all-data">
+                            <h3 id="congrats-name"></h3>
+                            <div class="github-info-div">
+                                <img src="assets/images/icon-github.svg" class="github-icon">
+                                <p id="congrats-github"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ticket-number-div">
+                        <h3 id="ticket-number"></h3>
+                    </div>
                 </div>
             </div>
+
+            <img src="assets/images/pattern-squiggly-line-bottom-desktop.svg" class="pattern-squiggly-line-bottom-desktop">
+            <img src="assets/images/pattern-squiggly-line-top.svg" class="pattern-squiggly-line-top">
+            <img src="assets/images/pattern-lines.svg" class="pattern-lines">
+            <img src="assets/images/pattern-circle.svg" class="pattern-circle">
         </main>
         
         <script src="script.js"></script>

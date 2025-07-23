@@ -5,7 +5,6 @@
 
 body {
     background-image: url(assets/images/background-desktop.png);
-    height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,22 +12,22 @@ body {
     padding: 0;
     color: white;
     font-family: 'Inconsolata Regular', sans-serif;
-    position: relative;
+    height: 100vh;
 }
 
-main {
+.main-div, .congratulations {
     display: flex;
-    height: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    position: relative;
+    z-index: 2;
 }
 
 header {
-    position: absolute;
-    top: 15px;
-    left: 50%;
-    transform: translateX(-50%);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 header div {
@@ -59,18 +58,14 @@ h3 {
     color: lightgray;
 }
 
-.congratulations {
-    display: none;
-}
-
 .form-div-wrapper {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .upload-avatar-div {
-    border: 1px dashed white;
+    border: 1px dashed lightgray;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -89,7 +84,7 @@ h3 {
     align-content: center;
     width: 40px;
     height: 40px;
-    border: 1px solid white;
+    border: 1px solid lightgray;
     border-radius: 10px;
 }
 
@@ -104,11 +99,17 @@ input {
     border: 1px solid gray;
     background-color: transparent;
     padding-left: 10px;
+    color: white;
 }
 
 input::placeholder {  
     font-family: 'Inconsolata Regular', sans-serif;
     color: lightgray;
+}
+
+input:hover, .upload-avatar-div:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
 }
 
 button {
@@ -117,6 +118,10 @@ button {
     color: #080029;
     font-weight: bold;
     width: 100%;
+}
+
+button:hover {
+    background-color: #e26050;
 }
 
 label {
@@ -138,4 +143,97 @@ label {
 
 form {
     margin-top: 20px;
+    width: 350px;
+}
+
+.warning {
+    display: none;
+    color: red;
+    gap: 8px;
+    font-size: 0.7em;
+}
+
+.pattern-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.pattern-squiggly-line-top {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    z-index: 1;
+}
+
+.pattern-squiggly-line-bottom-desktop {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.pattern-circle {
+    position: absolute;
+    top: 45%;
+    right: 25%;
+    z-index: 1;
+}
+
+.ticket-div {
+    background-image: url(assets/images/pattern-ticket.svg);
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 500px;
+    position: relative;
+}
+
+.congratulations {
+    display: none;
+}
+
+.congratulations .avatar-img {
+    border-radius: 5px;
+    width: 80px;
+}
+
+.congratulations .github-icon {
+    border-radius: 5px;
+    width: 20px;
+}
+
+.user-info-div, .github-info-div {
+    display: flex;
+}
+
+.header-ticket-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-ticket-div h2 {
+    margin: 0;
+}
+
+.header-ticket-div p {
+    margin: 0;
+}
+
+.header-ticket-div .mark-logo {
+    width: 30px;
+}
+
+.congrats-all-data {
+    padding-left: 20px;
+}
+
+.ticket-number-div h3 {
+    transform: rotate(90deg);
+    position: absolute;
+    right: 0;
 }
