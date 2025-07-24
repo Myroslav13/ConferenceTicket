@@ -11,9 +11,10 @@
     </head>
 
     <body>
+        <!-- Header -->
         <header>
             <div>
-                <img src="assets/images/logo-mark.svg">
+                <img src="assets/images/logo-mark.svg" alt="logo mark" draggable="false">
                 <h2>Coding Conf</h2>
             </div>
         </header>
@@ -28,13 +29,17 @@
                 <form>
                     <div class="form-div-wrapper form-div-wrapper1">
                         <label>Upload Avatar</label>
-                        <div class="upload-avatar-div">
-                            <div class="icon-upload-div"><img src="assets/images/icon-upload.svg"></div>
-                            <h3>Drag and drop or click to upload</h3>
+                        <div class="upload-avatar-div" id="upload-avatar-div">
+                            <div class="icon-upload-div" id="icon-upload-div">
+                                <img src="assets/images/icon-upload.svg" alt="icon upload" draggable="false">
+                            </div>
+                            <div id="footer-upload-avatar-div" class="footer-upload-avatar-div">
+                                <h3>Drag and drop or click to upload</h3>
+                            </div>
                         </div>
                         <div class="info-div">
-                            <img src="assets/images/icon-info.svg">
-                            <p>Upload your photo (JPG or PNG, max size: 500KB).</p>
+                            <img src="assets/images/icon-info.svg" alt="icon info" draggable="false">
+                            <p class="warning-photo" id="warning-photo">Upload your photo (JPG or PNG, max size: 500KB).</p>
                         </div>
                     </div>
 
@@ -42,7 +47,7 @@
                         <label for="full-name">Full Name</label>
                         <input type="text" id="full-name">
                         <div id="warning1" class="warning">
-                            <img src="assets/images/icon-info.svg">
+                            <img src="assets/images/icon-info.svg" alt="icon info" draggable="false">
                             <p>Please enter your full name</p>
                         </div>
                     </div>
@@ -51,16 +56,16 @@
                         <label for="email-address">Email Address</label>
                         <input type="text" placeholder="example@email.com" id="email-address">
                         <div id="warning2" class="warning">
-                            <img src="assets/images/icon-info.svg">
+                            <img src="assets/images/icon-info.svg" alt="icon info" draggable="false">
                             <p>Please enter your email address</p>
                         </div>
                     </div>
 
                     <div class="form-div-wrapper form-div-wrapper4">
-                        <label id="github-username">GitHub Username</label>
+                        <label for="github-username">GitHub Username</label>
                         <input type="text" placeholder="@yourusername" id="github-username">
                         <div id="warning3" class="warning">
-                            <img src="assets/images/icon-info.svg">
+                            <img src="assets/images/icon-info.svg" alt="icon info" draggable="false">
                             <p>Please enter your GitHub Username</p>
                         </div>
                     </div>
@@ -77,18 +82,18 @@
 
                 <div class="ticket-div">
                     <div class="header-ticket-div">
-                        <img src="assets/images/logo-mark.svg" class="mark-logo">
+                        <img src="assets/images/logo-mark.svg" class="mark-logo" alt="logo mark" draggable="false">
                         <h2>Coding Conf</h2>
                     </div>
             
-                    <p>Jan 31, 2025 / Austin, TX</p>
+                    <p class="date">Jan 31, 2025 / Austin, TX</p>
 
                     <div class="user-info-div">
-                        <img src="assets/images/image-avatar.jpg" class="avatar-img">
+                        <img src="assets/images/image-avatar.jpg" class="avatar-img" alt="image avatar" draggable="false">
                         <div class="congrats-all-data">
-                            <h3 id="congrats-name"></h3>
+                            <h3 id="congrats-name" class="congrats-name"></h3>
                             <div class="github-info-div">
-                                <img src="assets/images/icon-github.svg" class="github-icon">
+                                <img src="assets/images/icon-github.svg" class="github-icon" alt="icon github" draggable="false">
                                 <p id="congrats-github"></p>
                             </div>
                         </div>
@@ -100,10 +105,11 @@
                 </div>
             </div>
 
-            <img src="assets/images/pattern-squiggly-line-bottom-desktop.svg" class="pattern-squiggly-line-bottom-desktop">
-            <img src="assets/images/pattern-squiggly-line-top.svg" class="pattern-squiggly-line-top">
-            <img src="assets/images/pattern-lines.svg" class="pattern-lines">
-            <img src="assets/images/pattern-circle.svg" class="pattern-circle">
+            <!-- Side images -->
+            <img src="assets/images/pattern-squiggly-line-bottom-desktop.svg" class="pattern-squiggly-line-bottom-desktop" alt="pattern squiggly line bottom desktop" draggable="false">
+            <img src="assets/images/pattern-squiggly-line-top.svg" class="pattern-squiggly-line-top" alt="pattern squiggly line top" draggable="false">
+            <img src="assets/images/pattern-lines.svg" class="pattern-lines" alt="pattern lines" draggable="false">
+            <img src="assets/images/pattern-circle.svg" class="pattern-circle" alt="pattern circle" draggable="false">
         </main>
         
         <script src="script.js"></script>
